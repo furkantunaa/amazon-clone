@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Navigation } from "swiper";
 import { useNavigate, createSearchParams } from "react-router-dom";
 
 import "swiper/css";

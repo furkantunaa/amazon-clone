@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -24,12 +24,9 @@ const Carousel = () => {
           <img src={"../images/carousel_2.jpg"} alt="Carousel POR" />
         </SwiperSlide>
         <SwiperSlide className="bg-black">
-          <video
-            src={"../images/carousel_vid.mp4"}
-            type="video/mp4"
-            controls
-            muted="muted"
-          ></video>
+          <video controls muted="muted">
+            <source src={"../images/carousel_vid.mp4"} type="video/mp4" />
+          </video>
         </SwiperSlide>
         <SwiperSlide>
           <img src={"../images/carousel_4.jpg"} alt="Carousel POR" />
